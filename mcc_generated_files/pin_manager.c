@@ -63,14 +63,14 @@ void PIN_MANAGER_Initialize(void)
     /**
     TRISx registers
     */
-    TRISA = 0x30;
-    TRISC = 0x3F;
+    TRISA = 0x03;
+    TRISC = 0x03;
 
     /**
     ANSELx registers
     */
-    ANSELC = 0x3C;
-    ANSELA = 0x1F;
+    ANSELC = 0x30;
+    ANSELA = 0x00;
 
     /**
     WPUx registers
@@ -95,14 +95,17 @@ void PIN_MANAGER_Initialize(void)
 
 
    
+    // Enable IOCI interrupt 
+    PIE0bits.IOCIE = 1; 
     
 	
     RC0PPS = 0x15;   //RC0->MSSP1:SCL1;    
     SSP1CLKPPS = 0x10;   //RC0->MSSP1:SCL1;    
+    RC3PPS = 0x0D;   //RC3->PWM5:PWM5OUT;    
     RC1PPS = 0x16;   //RC1->MSSP1:SDA1;    
-    RA1PPS = 0x0D;   //RA1->PWM5:PWM5OUT;    
-    RA2PPS = 0x0C;   //RA2->PWM4:PWM4OUT;    
-    RA0PPS = 0x0E;   //RA0->PWM6:PWM6OUT;    
+    RC4PPS = 0x0C;   //RC4->PWM4:PWM4OUT;    
+    RC2PPS = 0x0E;   //RC2->PWM6:PWM6OUT;    
+    RC5PPS = 0x0B;   //RC5->PWM3:PWM3OUT;    
     SSP1DATPPS = 0x11;   //RC1->MSSP1:SDA1;    
 }
   
