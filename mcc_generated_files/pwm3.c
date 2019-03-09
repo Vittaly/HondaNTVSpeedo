@@ -64,8 +64,8 @@
     // DC 0; 
     PWM3DCH = 0x00;   
 
-    // DC 0; 
-    PWM3DCL = 0x00;   
+    // DC 1; 
+    PWM3DCL = 0x40;   
 
  }
 

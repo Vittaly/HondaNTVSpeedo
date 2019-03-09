@@ -42,6 +42,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#include "arrowUtility.h"
 
 /*
                          Main application
@@ -69,6 +70,7 @@ void main(void)
     while (1)
     {
         // Add your application code
+        startingTest();
     }
 }
 /**

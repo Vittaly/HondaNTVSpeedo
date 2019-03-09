@@ -64,8 +64,8 @@
     // DC 0; 
     PWM6DCH = 0x00;   
 
-    // DC 0; 
-    PWM6DCL = 0x00;   
+    // DC 1; 
+    PWM6DCL = 0x40;   
 
  }
 

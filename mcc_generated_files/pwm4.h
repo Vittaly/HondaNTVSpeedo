@@ -64,7 +64,7 @@
    Section: Macro Declarations
  */
 
- #define PWM4_INITIALIZE_DUTY_VALUE    0
+ #define PWM4_INITIALIZE_DUTY_VALUE    1
 
  /**
    Section: PWM Module APIs
